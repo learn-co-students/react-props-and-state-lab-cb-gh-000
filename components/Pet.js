@@ -1,6 +1,6 @@
-const React = require('react');
+import React from 'react';
 
-class Pet extends React.Component {
+export default class Pet extends React.Component {
   constructor() {
     super();
 
@@ -35,5 +35,3 @@ class Pet extends React.Component {
     );
   }
 }
-
-module.exports = Pet;
