@@ -4,6 +4,6 @@ import App from './components/App';
 import './fetch-setup';
 
 ReactDOM.render(
-  <App />,
+  <App fetchAll={fetch('/api/pets')}/>,
   document.getElementById('root')
 );
