@@ -1,22 +1,23 @@
-import React from 'react';
+const React = require('react');
 
-export default class Filters extends React.Component {
+
+class Filters extends React.Component {
   constructor() {
     super();
 
-    this.handleFilterChangeType = this.handleFilterChangeType.bind(this);
+    this.handleChange = this.handleChange.bind(this)
   }
 
-  handleFilterChangeType(event) {
-    this.props.onChangeType(event.target.value);
-  }
+  handleChange(event) {
+    this.props.onChangeType(event.target.value)
+    }
 
   render() {
     return (
       <div className="ui form">
         <h3>Animal type</h3>
         <div className="field">
-          <select name="type" id="type" value={this.props.filters.type} onChange={this.handleFilterChangeType}>
+          <select name="type" id="type" value={this.props.filters.type} onChange={this.handleChange}>
             <option value="all">All</option>
             <option value="cat">Cats</option>
             <option value="dog">Dogs</option>
@@ -31,3 +32,5 @@ export default class Filters extends React.Component {
     );
   }
 }
+
+module.exports = Filters;
