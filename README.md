@@ -5,7 +5,7 @@
 You'll build a small React application where you'll update state in response to
 a fetch payload and pass props among components to handle updates.
 
-## Animal Shelter
+## Animal Shrelter
 
 ![Best Friends](https://media.giphy.com/media/xTiTnz5OOUn49wKbg4/giphy.gif)
 
